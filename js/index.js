@@ -14,10 +14,44 @@ var monsterPlace = function(){
 	setTimeout(function(){
 		document.getElementById("m"+mPosition).innerHTML = "";
 		monsterPlace();
-	}, 3000)
+	}, 2000)
 }
 
 monsterPlace();
+
+
+
+
+
+
+
+
+
+
+document.onkeydown = checkKey;
+
+function checkKey(e) {
+
+    e = e || window.event;
+
+    if (e.keyCode == '38') {
+    	console.log("hit");
+    	hit();
+    }
+    else if (e.keyCode == '37') {
+       console.log("left");
+       leftmove();
+    }
+    else if (e.keyCode == '39') {
+       console.log("right");
+       rightmove();
+    }
+
+}
+
+
+
+
 
 var hit = function() {
 	if (pPosition == mPosition){
@@ -37,6 +71,7 @@ var hit = function() {
 		document.getElementById('display').innerHTML = "You Miss!";
 	}
 }
+
 var rightmove = function(){
 	if (pPosition==3) {
 		document.getElementById('display').innerHTML = "Can't move that way.";
@@ -45,13 +80,7 @@ var rightmove = function(){
 		pPosition++;
 		document.getElementById("p"+pPosition).innerHTML = "Player";
 	}
-
-
-
 }
-
-
-
 
 var leftmove = function(){
 	if (pPosition==1) {
