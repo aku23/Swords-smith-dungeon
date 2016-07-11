@@ -1,25 +1,43 @@
+body{
+	text-align:center;
+	background-color:#2E2E2E;
+}
+
 #h1{
-	 color:blue;
-	}
+	  color:#8A0808;
 
-#rectangle{
-	background-color:#00FFBF;
+}
+
+.space{
+	height: 98px;
+	width: 98px;
+	border:solid;
+	border-width: 1px;
+	border-color: black;
+	float: left;
+}
+
+#display{
 	height: 100px;
-	width: 1350px;
-	border-radius: 30%;
+	font-family: times;
+	font-size: 40px;
+	background-color: lightgrey;
+	color: #610B0B;
+} 
+#gameWrapper{
+	height: 200px;
+	width: 300px;
+	display: inline-block;
 }
-#rectangle2{
-	background-color:#00FFBF;
-	height: 400px;
-	width: 100px;
-	border-radius: 30%;
 
+#monster{
+	width: 300px;
+	height: 100px;
+/*	background-color: blue;*/
 }
-#rectangle3{
-	background-color:#00FFBF;
-	height: 400px;
-	width: 100px;
-	margin-left: 1250px;
-	margin-top: -400px;
-	border-radius: 30%;
+#player{
+	width: 300px;
+	height: 100px;
+/*	background-color: yellow;*/
+
 }
