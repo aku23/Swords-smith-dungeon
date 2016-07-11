@@ -14,7 +14,7 @@ var monsterPlace = function(){
 	setTimeout(function(){
 		document.getElementById("m"+mPosition).innerHTML = "";
 		monsterPlace();
-	}, 2000)
+	}, 1000)
 }
 
 monsterPlace();
