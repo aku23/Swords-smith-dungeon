@@ -4,13 +4,13 @@ var hitpower;
 var mPosition;
 var pPosition = 2;
 
-document.getElementById("p"+pPosition).innerHTML = "Player";
+document.getElementById("p"+pPosition).innerHTML = "<img src='../assets/player.jpg'";
 
 
 var monsterPlace = function(){
 	mPosition =  Math.floor(Math.random()*3)+1;
 	console.log(mPosition);
-	document.getElementById("m"+mPosition).innerHTML = "Mon";
+	document.getElementById("m"+mPosition).innerHTML = "<img src='../assets/monster.jpg'>";
 	setTimeout(function(){
 		document.getElementById("m"+mPosition).innerHTML = "";
 		monsterPlace();
@@ -78,7 +78,7 @@ var rightmove = function(){
 	} else {
 		document.getElementById("p"+pPosition).innerHTML = "";	
 		pPosition++;
-		document.getElementById("p"+pPosition).innerHTML = "Player";
+		document.getElementById("p"+pPosition).innerHTML = "<img src='../assets/monster.jpg'>";
 	}
 }
 
@@ -88,7 +88,7 @@ var leftmove = function(){
 	} else {
 		document.getElementById("p"+pPosition).innerHTML = "";	
 		pPosition--;
-		document.getElementById("p"+pPosition).innerHTML = "Player";
+		document.getElementById("p"+pPosition).innerHTML = "<img src='../assets/monster.jpg'>";
 	}
 }
 
