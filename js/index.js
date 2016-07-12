@@ -4,7 +4,7 @@ var hitpower;
 var mPosition;
 var pPosition = 2;
 
-document.getElementById("p"+pPosition).innerHTML = "<img src='../assets/stickman.png'";
+document.getElementById("p"+pPosition).innerHTML = "<img src='../assets/stickman.png' id='stickman'>";
 
 
 var monsterPlace = function(){
@@ -78,7 +78,7 @@ var rightmove = function(){
 	} else {
 		document.getElementById("p"+pPosition).innerHTML = "";	
 		pPosition++;
-		document.getElementById("p"+pPosition).innerHTML = "<img src='../assets/stickman.png'>";
+		document.getElementById("p"+pPosition).innerHTML = "<img src='../assets/stickman.png' id='stickman'>";
 	}
 }
 
@@ -88,7 +88,7 @@ var leftmove = function(){
 	} else {
 		document.getElementById("p"+pPosition).innerHTML = "";	
 		pPosition--;
-		document.getElementById("p"+pPosition).innerHTML = "<img src='../assets/stickman.png'>";
+		document.getElementById("p"+pPosition).innerHTML = "<img src='../assets/stickman.png' id='stickman'>";
 	}
 }
 
