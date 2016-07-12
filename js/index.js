@@ -1,7 +1,7 @@
 var monHealth =100;
 var hitpower;
 
-var mPosition;
+var mPosition = 2;
 var pPosition = 2;
 
 document.getElementById("p"+pPosition).innerHTML = "<img src='../assets/stickman.png' id='stickman'>";
