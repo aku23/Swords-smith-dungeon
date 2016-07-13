@@ -3,6 +3,11 @@ var hitpower;
 
 var mPosition = 2;
 var pPosition = 2;
+var monsters = ["<img src=../assets/blue.png id='blue'>",
+"<img src=../assets/imgres.png id='blue'>"]
+
+var pickMonster = monsters[monsterIndex];
+var monsterIndex = 0;
 
 document.getElementById("p"+pPosition).innerHTML = "<img src='../assets/stickman.png' id='stickman'>";
 
@@ -10,7 +15,7 @@ document.getElementById("p"+pPosition).innerHTML = "<img src='../assets/stickman
 var monsterPlace = function(){
 	mPosition =  Math.floor(Math.random()*3)+1;
 	console.log(mPosition);
-	document.getElementById("m"+mPosition).innerHTML = "<img src='../assets/blue.png' id='blue'>" ;
+	document.getElementById("m"+mPosition).innerHTML = pickMonster ;
 	setTimeout(function(){
 		document.getElementById("m"+mPosition).innerHTML = "";
 		monsterPlace();
@@ -52,6 +57,8 @@ var hit = function() {
 		if (monHealth <= 0) {
 			document.getElementById('display').innerHTML = "Your monster is dead!";
 			document.getElementById("m"+mPosition).innerHTML = "";
+			monsterIndex = Math.floor(Math.random()*monsters.length);
+			pickMonster = monsters[monsterIndex]
 			monsterPlace();
 			monHealth =100;
 
