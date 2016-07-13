@@ -19,12 +19,6 @@ var monsterPlace = function(){
 
 monsterPlace();
 
-
-var monster = ["<img src='../assets/imgres.jpg' id='blue'>" 
-"<img src='../assets/stickman.png' id='stickman'>",
-]
-
-
 document.onkeydown = checkKey;
 
 function checkKey(e) {
