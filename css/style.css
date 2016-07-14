@@ -1,10 +1,10 @@
 body{
 	text-align:center;
-	background-color:#2E2E2E;
+	background-color:yellow;
 }
 
 #h1{
-	  color:#8A0808;
+	  color:blue;
 
 }
 
@@ -21,8 +21,8 @@ body{
 	height: 100px;
 	font-family: times;
 	font-size: 40px;
-	background-color: lightgrey;
-	color: #610B0B;
+	background-color: yellow;
+	color: blue;
 } 
 #gameWrapper{
 	height: 200px;

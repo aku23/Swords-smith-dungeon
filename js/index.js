@@ -4,7 +4,7 @@ var hitpower;
 var mPosition = 2;
 var pPosition = 2;
 var monsters = ["<img src=../assets/blue.png id='blue'>",
-"<img src=../assets/imgres.png id='blue'>"]
+"<img src=../assets/imgres.png id='blue'>", "<img src=../assets/bowler.png id='blue'>"]
 
 var pickMonster = monsters[monsterIndex];
 var monsterIndex = 0;
@@ -60,7 +60,7 @@ var hit = function() {
 			monsterIndex = Math.floor(Math.random()*monsters.length);
 			pickMonster = monsters[monsterIndex]
 			monsterPlace();
-			monHealth =100;
+			monHealth = 100;
 
 		} else {
 			document.getElementById('display').innerHTML = "Your monster is at "  + monHealth;
