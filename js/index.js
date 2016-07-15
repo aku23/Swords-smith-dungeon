@@ -3,13 +3,13 @@ var hitpower;
 
 var mPosition = 2;
 var pPosition = 2;
-var monsters = ["<img src=../assets/blue.png id='blue'>",
-"<img src=../assets/imgres.png id='blue'>", "<img src=../assets/bowler.png id='blue'>"]
+var monsters = ["<img src='assets/blue.png id='blue'>",
+"<img src='assets/imgres.png id='blue'>", "<img src='assets/bowler.png id='blue'>"]
 
 var pickMonster = monsters[monsterIndex];
 var monsterIndex = 0;
 
-document.getElementById("p"+pPosition).innerHTML = "<img src='../assets/stickman.png' id='stickman'>";
+document.getElementById("p"+pPosition).innerHTML = "<img src='assets/stickman.png' id='stickman'>";
 
 
 var monsterPlace = function(){
@@ -76,7 +76,7 @@ var rightmove = function(){
 	} else {
 		document.getElementById("p"+pPosition).innerHTML = "";	
 		pPosition++;
-		document.getElementById("p"+pPosition).innerHTML = "<img src='../assets/stickman.png' id='stickman'>";
+		document.getElementById("p"+pPosition).innerHTML = "<img src='assets/stickman.png' id='stickman'>";
 	}
 }
 
@@ -86,7 +86,7 @@ var leftmove = function(){
 	} else {
 		document.getElementById("p"+pPosition).innerHTML = "";	
 		pPosition--;
-		document.getElementById("p"+pPosition).innerHTML = "<img src='../assets/stickman.png' id='stickman'>";
+		document.getElementById("p"+pPosition).innerHTML = "<img src='assets/stickman.png' id='stickman'>";
 	}
 }
 
