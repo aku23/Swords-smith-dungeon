@@ -3,7 +3,7 @@ var hitpower;
 
 var mPosition = 2;
 var pPosition = 2;
-var monsters = ["<img src='assets/blue.png' id='blue'>",
+var monsters = ["<img src='assets/blue.png'   id='blue'>",
 "<img src='assets/imgres.png' id='blue'>", "<img src='assets/bowler.png' id='blue'>"]
 
 var pickMonster = monsters[monsterIndex];
